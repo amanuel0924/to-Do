@@ -23,7 +23,7 @@ exports.createTodo = async (req, res, next) => {
 
     res.status(200).json({
       status: "success",
-      message: todo,
+      data: todo,
     })
   } catch (err) {
     res.status(404).json({
