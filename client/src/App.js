@@ -38,7 +38,7 @@ function App() {
     getAlltodos()
   }, [])
   return (
-    <>
+    <div>
       {showModal && (
         <Modal
           toggleModal={toggleModal}
@@ -46,7 +46,7 @@ function App() {
           modalContent={modalContent}
         />
       )}
-      <div className=" max-w-lg  md:w-2/5 m-10 md:mx-auto justify-center items-center">
+      <div className=" max-w-lg  md:w-2/5 m-10 md:mx-auto justify-center items-center px-8 py-4 rounded-md shadow-md">
         <h1 className=" text-center text-2xl  md:text-5xl font-bold mt-10">
           My To Do's
         </h1>
@@ -82,7 +82,7 @@ function App() {
           )}
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
