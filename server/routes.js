@@ -10,10 +10,7 @@ router
 
 router
   .route("/:id")
-  .delete((req, res) => {
-    res.status(203).json({ data: "delet request to   ---/todos/:id" })
-  })
-  .put((req, res) => {
-    res.status(200).json({ data: "put request to   ---/todo/ids" })
-  })
+  .delete(todoController.deleteTodo)
+  .put(todoController.editTodo)
+  .patch(todoController.updateTodo)
 module.exports = router
